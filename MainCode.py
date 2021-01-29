@@ -5,7 +5,7 @@ class MyClient(discord.Client):
     async def on_ready(self):
         print("Logged in")
 
-        await client.change_presence(activity=discord.Game("t!help"))
+        await client.change_presence(activity=discord.Game("T!help"))
 
     async def on_message(self, message):
         
