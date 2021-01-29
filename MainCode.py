@@ -5,16 +5,12 @@ class MyClient(discord.Client):
     async def on_ready(self):
         print("Logged in")
 
-        await client.change_presence(activity=discord.Game("T!help"))
+        await client.change_presence(activity=discord.Game("t!help"))
 
     async def on_message(self, message):
         
         msg = message.content.upper()
         if message.author != client.user:
-
-            #if msg == "TEST":
-                #print("Message received")
-                #await message.channel.send("pmub d!")
                 
             if msg == "T!SPOTIFY":
                 print("SPOTIFY")
