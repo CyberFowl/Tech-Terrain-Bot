@@ -1,5 +1,6 @@
 import discord
 import time
+from config import token
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -80,4 +81,4 @@ class MyClient(discord.Client):
 print("Code is running")
 
 client = MyClient()
-client.run("BOT_TOKEN_HERE")
+client.run(token)
